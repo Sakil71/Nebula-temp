@@ -27,6 +27,9 @@ export default {
           },
         },
       },
+      fontFamily: {
+        inter: ['"Inter Tight"', 'sans-serif'],
+      },
     },
   },
   plugins: [daisyui],

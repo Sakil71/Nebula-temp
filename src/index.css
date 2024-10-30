@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* For navbar */
 .lighting-button {
     width: 123px;
@@ -18,7 +19,10 @@
 
 .lighting-button::before {
     content: '';
-    background-image: conic-gradient(#85e9b4 10deg, transparent 100deg);
+    background-image: conic-gradient(#85e9b4 10deg, transparent 100deg);    
+    filter: blur(15px);
+    opacity: 1;
+    border-radius: 10px;
     width: 300%;
     height: 300%;
     position: absolute;

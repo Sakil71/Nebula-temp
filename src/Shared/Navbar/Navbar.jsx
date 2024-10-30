@@ -9,7 +9,7 @@ const Navbar = () => {
     const menu = ['Process', 'Services', 'Work', 'Plans', 'Team'];
 
     return (
-        <div className='px-10 py-6 flex justify-between items-center bg-inherit text-white relative'>
+        <div className='py-6 flex justify-between items-center bg-transparent text-white relative'>
             {/* Title */}
             <div className='text-green-200 text-xl flex items-center gap-2'>
                 <div className='border w-3 h-3 rounded-full bg-green-200'></div>
@@ -18,7 +18,7 @@ const Navbar = () => {
                     onMouseEnter={() => setHoverTitle(true)}
                     onMouseLeave={() => setHoverTitle(false)}
                 >
-                    <h1 className={`relative transition-transform duration-500 ${hoverTitle ? 'translate-y-[-30px]' : 'translate-y-0'}`}>NEBULA</h1>
+                    <h1 className={`relative transition-transform duration-500 ${hoverTitle ? 'translate-y-[-30px]' : 'translate-y-1'}`}>NEBULA</h1>
                     <h1 className={`relative transition-transform duration-500 ${hoverTitle ? 'translate-y-[-27px]' : 'translate-y-10'}`}>NEBULA</h1>
                 </div>
             </div>
