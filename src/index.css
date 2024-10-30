@@ -2,3 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+.lighting-button {
+    width: 123px;
+    height: 43px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: border 1s ease-out;
+}
+
+.lighting-button::before {
+    content: '';
+    background-image: conic-gradient(#85e9b4 10deg,
+            transparent 100deg);
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    animation: rotate 5s linear infinite;
+}
+
+.lighting-button:hover::before{
+    animation: none;
+    opacity: 0;
+}
+
+
+.lighting-button::after {
+    content: 'Buy this template';
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(39, 37, 37);
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
