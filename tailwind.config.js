@@ -8,16 +8,25 @@ export default {
   ],
   theme: {
     extend: {
-      // keyframes:{
-      //   'border-spin' :{
-      //     '100%' :{
-      //       transform : 'rotate(360deg)'
-      //     },
-      //   },
-      // },
-      // animation: {
-      //   "border-spin": "border-spin 7s linear infinite", 
-      // },
+      animation: {
+        blob: "blob 7s infinite",
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [daisyui],

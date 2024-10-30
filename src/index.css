@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* For navbar */
 .lighting-button {
     width: 123px;
     height: 43px;
@@ -11,13 +13,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    transition: border 1s ease-out;
+    transition: border 0s ease-in-out;
 }
 
 .lighting-button::before {
     content: '';
-    background-image: conic-gradient(#85e9b4 10deg,
-            transparent 100deg);
+    background-image: conic-gradient(#85e9b4 10deg, transparent 100deg);
     width: 300%;
     height: 300%;
     position: absolute;
@@ -26,7 +27,7 @@
     animation: rotate 5s linear infinite;
 }
 
-.lighting-button:hover::before{
+.lighting-button:hover::before {
     animation: none;
     opacity: 0;
 }
@@ -57,3 +58,18 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* For banner */
+
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 1s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 1s;
+    }
+    .animation-delay-6000 {
+      animation-delay: 1s;
+    }
+  }
