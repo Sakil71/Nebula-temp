@@ -18,8 +18,8 @@ const Banner = () => {
 
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center w-full text-center text-white space-y-4">
-                <h1 className="text-4xl sm:text-8xl font-bold">Driving growth with AI.</h1>
-                <p className="text-lg sm:text-xl">We craft workflow automations and bespoke AI solutions for forward-thinking companies.</p>
+                <h1 className="text-5xl md:text-8xl font-bold">Driving growth with AI.</h1>
+                <p className="hidden md:block text-lg">We craft workflow automations and bespoke AI solutions for forward-thinking companies.</p>
 
                 <div className=" flex items-center gap-5">
 
